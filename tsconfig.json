@@ -4,12 +4,31 @@
          "es5",
          "es6"
       ],
+     "baseUrl": "./src",
+      "paths": {
+        "@modules/*": [
+          "modules/*"
+        ],
+        "@config/*": [
+          "config/*"
+        ],
+        "@shared/*": [
+          "shared/*"
+        ],
+        "@entities/*": [
+          "entities/*"
+        ],
+        "@data-source": [
+          "data-source.ts"
+        ]
+      },
       "target": "es5",
       "module": "commonjs",
       "moduleResolution": "node",
       "outDir": "./build",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
-      "sourceMap": true
+      "sourceMap": true,
+      "esModuleInterop": true,
    }
 }

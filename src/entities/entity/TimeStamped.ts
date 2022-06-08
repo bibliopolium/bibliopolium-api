@@ -1,4 +1,4 @@
-import { Entity, CreateDateColumn, UpdateDateColumn } from "typeorm";
+import { CreateDateColumn, UpdateDateColumn } from "typeorm";
 
 export class TimeStamped {
   @CreateDateColumn()
